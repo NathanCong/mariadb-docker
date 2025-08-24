@@ -1,4 +1,4 @@
 #!/bin/bash
 
 # 停止服务
-sudo docker-compose down
+sudo docker compose down
