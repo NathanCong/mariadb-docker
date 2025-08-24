@@ -7,8 +7,10 @@ services:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_USER: ${MYSQL_USER}
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      TZ: ${TZ}
     ports:
       - 3306:3306
     volumes:
       - ${VOLUME_DATA_PATH}:/var/lib/mysql
       - ${VOLUME_CONF_PATH}:/etc/mysql/conf.d
+      - ${VOLUME_CONF_PATH}:/etc/localtime:ro
