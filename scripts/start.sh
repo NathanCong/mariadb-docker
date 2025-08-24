@@ -1,4 +1,4 @@
 #!/bin/bash
 
 # 启动服务
-docker-compose up -d
+sudo docker-compose up -d
