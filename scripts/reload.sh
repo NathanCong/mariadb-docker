@@ -1,4 +1,4 @@
 #!/bin/bash
 
 # 重启服务
-docker-compose restart
+sudo docker-compose restart
