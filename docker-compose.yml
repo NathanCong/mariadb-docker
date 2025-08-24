@@ -13,4 +13,4 @@ services:
     volumes:
       - ${VOLUME_DATA_PATH}:/var/lib/mysql
       - ${VOLUME_CONF_PATH}:/etc/mysql/conf.d
-      - ${VOLUME_CONF_PATH}:/etc/localtime:ro
+      - ${VOLUME_TIME_PATH}:/etc/localtime:ro
